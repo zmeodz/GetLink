@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="409.0" prefWidth="690.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView fx:id="tableLink" layoutX="21.0" layoutY="28.0" prefHeight="347.0" prefWidth="661.0" tableMenuButtonVisible="true">
+         <columns>
+            <TableColumn fx:id="colIdWebsite" prefWidth="85.0" text="ID Website" />
+            <TableColumn fx:id="colIdLink" minWidth="0.0" prefWidth="118.0" text="ID History" />
+            <TableColumn fx:id="colUrl" prefWidth="98.0" text="Url" />
+            <TableColumn fx:id="colStatus" minWidth="0.0" prefWidth="101.0" text="Status" />
+            <TableColumn fx:id="colDateCreateLink" minWidth="0.0" prefWidth="123.0" text="Date Create" />
+            <TableColumn fx:id="colDateUpdateLink" minWidth="0.0" prefWidth="139.0" text="Date Update" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

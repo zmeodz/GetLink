@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="444.0" prefWidth="678.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView fx:id="tableHistory" layoutX="24.0" layoutY="25.0" prefHeight="392.0" prefWidth="632.0" tableMenuButtonVisible="true">
+        <columns>
+          <TableColumn fx:id="colTitleHistoryWebsite" prefWidth="113.0" text="ID Website" />
+          <TableColumn fx:id="colIdHistory" prefWidth="106.0" text="ID History" />
+            <TableColumn fx:id="colStatus" prefWidth="94.0" text="Status" />
+            <TableColumn fx:id="colDateCreate" prefWidth="129.0" text="Date Create" />
+            <TableColumn fx:id="colDateUpdate" prefWidth="139.0" text="Date Update" />
+        </columns>
+         <contextMenu>
+            <ContextMenu>
+              <items>
+                  <MenuItem fx:id="Link" mnemonicParsing="false" onAction="#historyLink" text="Link" />
+                <MenuItem fx:id="Image" mnemonicParsing="false" onAction="#historyImage" text="Image" />
+              </items>
+            </ContextMenu>
+         </contextMenu>
+      </TableView>
+   </children>
+</AnchorPane>
